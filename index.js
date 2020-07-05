@@ -4,6 +4,12 @@ const port = 3000;
 const path = require('path');
 const db = require('./config/mongoose');
 const expressLayouts = require('express-ejs-layouts');
+const cookieParser = require('cookie-parser');
+
+//cookie settings
+app.use(cookieParser());
+//form controller
+app.use(express.urlencoded());
 
 //express layout
 app.use(expressLayouts);
