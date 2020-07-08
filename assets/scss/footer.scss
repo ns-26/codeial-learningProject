@@ -1,0 +1,17 @@
+footer {
+	background-color: gray;
+	.copyright {
+		display: flex;
+		color: white;
+		padding: 15px;
+		justify-content: space-between;
+		p {
+			margin: 0;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			padding: 8px;
+		}
+	}
+}

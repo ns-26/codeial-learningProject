@@ -1,0 +1,33 @@
+body {
+	#layout-main {
+		margin-top: 60px;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		background-color: #1b54bd;
+		color: white;
+		padding: 10px;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		h1 {
+			margin: 0;
+		}
+		ul {
+			margin: 0;
+		}
+		li {
+			display: inline;
+			a {
+				text-decoration: none;
+				color: white;
+				padding: 8px;
+				position: relative;
+				top: 7px;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
