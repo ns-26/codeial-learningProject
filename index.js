@@ -1,15 +1,15 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-const path = require('path');
-const db = require('./config/mongoose');
-const expressLayouts = require('express-ejs-layouts');
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
-const passport = require('passport');
-const passportLocal = require('./config/passport_local_stratergy');
-const mongoStore = require('connect-mongo')(session); //storing the session where the connect needs to work
-const sassMiddleware = require('node-sass-middleware');
+const express = require('express'),
+	app = express(),
+	port = 3000,
+	path = require('path'),
+	db = require('./config/mongoose'),
+	expressLayouts = require('express-ejs-layouts'),
+	cookieParser = require('cookie-parser'),
+	session = require('express-session'),
+	passport = require('passport'),
+	passportLocal = require('./config/passport_local_stratergy'),
+	mongoStore = require('connect-mongo')(session), //storing the session where the connect needs to work
+	sassMiddleware = require('node-sass-middleware');
 
 app.use(
 	sassMiddleware({
