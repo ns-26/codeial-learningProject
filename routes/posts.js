@@ -4,6 +4,8 @@ const router = express.Router();
 
 const postController = require('../controllers/post_controller');
 
-router.post('/create', postController.create);
+const passport = require('../config/passport_local_stratergy');
+
+router.post('/create', passport.checkAuthentication, postController.create);
 
 module.exports = router;

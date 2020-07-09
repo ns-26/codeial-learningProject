@@ -14,6 +14,9 @@ module.exports.home = function(req, res) {
 
 	//populate the comments of the entire user
 	Post.find({}).populate('user').exec(function(err, posts) {
+		if (err) {
+			console.log("Some error finding the posts and populating it with user's info");
+		}
 		return res.render('home', {
 			title: 'Codeial | Home',
 			posts: posts
