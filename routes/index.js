@@ -6,6 +6,8 @@ const router = express.Router();
 router.use('/users', require('./users'));
 //posts route
 router.use('/posts', require('./posts'));
+//comments route
+router.use('/comments', require('./comments'));
 
 //require and use home controller
 const homeController = require('../controllers/home_controller');
