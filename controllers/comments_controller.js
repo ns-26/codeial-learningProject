@@ -4,6 +4,9 @@ const Post = require('../modals/post');
 
 module.exports.create = function(req, res) {
 	Post.findById(req.body.post, function(err, post) {
+		if (err) {
+			console.log('Error in finding the post');
+		}
 		if (post) {
 			Comment.create(
 				{
