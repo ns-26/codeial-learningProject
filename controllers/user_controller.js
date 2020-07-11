@@ -3,10 +3,28 @@ const User = require('../modals/user');
 
 //render the profile page
 module.exports.profile = function(req, res) {
-	return res.render('user_profile', {
-		title: 'Codeial | Profile Page'
+	User.findById(req.params.id, function(err, user) {
+		return res.render('user_profile', {
+			title: 'Codeial | Profile Page',
+			profile_user: user
+		});
 	});
 };
+
+module.exports.update = function(req, res) {
+	if (req.user.id == req.params.id) {
+		User.findByIdAndUpdate(req.params.id, req.body, function(err, user) {
+			if (err) {
+				console.log('error in updating the users values');
+				return res.redirect('back');
+			}
+			return res.redirect('/');
+		});
+	} else {
+		return res.status(401).send('Unauthorized');
+	}
+};
+
 //render the sign in page
 module.exports.signIn = function(req, res) {
 	if (req.isAuthenticated()) {

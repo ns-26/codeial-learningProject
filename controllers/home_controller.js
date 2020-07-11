@@ -1,5 +1,7 @@
 const Post = require('../modals/post');
 
+const User = require('../modals/user');
+
 module.exports.home = function(req, res) {
 	// console.log(req.cookies);
 	// res.cookie('user_id', 25);
@@ -25,9 +27,12 @@ module.exports.home = function(req, res) {
 			if (err) {
 				console.log("Some error finding the posts and populating it with user's info");
 			}
-			return res.render('home', {
-				title: 'Codeial | Home',
-				posts: posts
+			User.find({}, function(err, users) {
+				return res.render('home', {
+					title: 'Codeial | Home',
+					posts: posts,
+					all_users: users
+				});
 			});
 		});
 };
