@@ -1,7 +1,6 @@
 const Post = require('../modals/post');
 
 const Comment = require('../modals/comment');
-const { response } = require('express');
 
 module.exports.create = async function(req, res) {
 	try {
