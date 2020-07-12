@@ -68,10 +68,12 @@ module.exports.create = function(req, res) {
 };
 //sign in user
 module.exports.createSession = function(req, res) {
+	req.flash('success', 'Logged In Successfully');
 	return res.redirect('/');
 };
 
 module.exports.destroySession = function(req, res) {
+	req.flash('success', 'You have logged out');
 	req.logout();
 	return res.redirect('/');
 };
