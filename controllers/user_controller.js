@@ -15,9 +15,11 @@ module.exports.update = function(req, res) {
 	if (req.user.id == req.params.id) {
 		User.findByIdAndUpdate(req.params.id, req.body, function(err, user) {
 			if (err) {
+				req.flash('error', 'Error in Updating');
 				console.log('error in updating the users values');
 				return res.redirect('back');
 			}
+			req.flash('success', 'Updated!');
 			return res.redirect('/');
 		});
 	} else {
@@ -50,15 +52,18 @@ module.exports.create = function(req, res) {
 	}
 	User.findOne({ email: req.body.email }, function(err, user) {
 		if (err) {
+			req.flash('error', 'Email already taken');
 			console.log('error in finding user in signing up');
 			return;
 		}
 		if (!user) {
 			User.create(req.body, function(err, user) {
 				if (err) {
+					req.flash('error', 'Sorry! Unable to create user');
 					console.log('error in creating user while signing up');
 					return;
 				}
+				req.flash('success', 'User signed up successfully');
 				return res.redirect('/users/sign-in');
 			});
 		} else {
