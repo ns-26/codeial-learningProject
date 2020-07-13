@@ -64,4 +64,8 @@
 	};
 
 	createPost();
+	let deletePostButton = $('.delete-post-button');
+	for (button of deletePostButton) {
+		deletePost(button);
+	}
 }

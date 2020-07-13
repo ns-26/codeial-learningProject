@@ -12,10 +12,18 @@ module.exports.create = async function(req, res) {
 				user: req.user._id,
 				post: req.body.post
 			});
-			req.flash('success', 'Comment Created');
 			post.comments.push(comment);
 			post.save();
-			res.redirect('/');
+			if (req.xhr) {
+				return res.status(200).json({
+					data: {
+						comment: comment
+					},
+					message: 'Comment Created!'
+				});
+			}
+			req.flash('success', 'Comment Created');
+			return res.redirect('/');
 		} else {
 			req.flash('error', 'Unable to find the associated post');
 			console.log('post not found');
@@ -35,6 +43,14 @@ module.exports.destroy = async function(req, res) {
 		if (req.user.id == comment.user) {
 			comment.remove();
 			await Post.findByIdAndUpdate(postId, { $pull: { comments: req.params.id } });
+			if (req.xhr) {
+				return res.status(200).json({
+					data: {
+						comment_id: req.params.id
+					},
+					message: 'Post Deleted'
+				});
+			}
 			req.flash('success', 'Comment Deleted');
 			return res.redirect('back');
 		} else if (true) {
@@ -42,6 +58,14 @@ module.exports.destroy = async function(req, res) {
 			if (post.user == req.user.id) {
 				comment.remove();
 				await Post.findByIdAndUpdate(postId, { $pull: { comments: req.params.id } });
+				if (req.xhr) {
+					return res.status(200).json({
+						data: {
+							comment_id: req.params.id
+						},
+						message: 'Post Deleted'
+					});
+				}
 				req.flash('success', 'Comment Deleted');
 				return res.redirect('back');
 			} else {
