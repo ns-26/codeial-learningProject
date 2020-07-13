@@ -13,6 +13,15 @@
 					let newComment = newCommentDom(data.data.comment);
 					$(`#post-comments-${data.data.comment.post}`).prepend(newComment);
 					deleteComment($(' .delete-comment-button', newComment));
+
+					new Noty({
+						theme: 'relax',
+						text: 'Comment published!',
+						type: 'success',
+						layout: 'topRight',
+						timeout: 1500
+					}).show();
+
 					console.log(data.data.comment);
 				},
 				error: function(error) {
@@ -43,6 +52,15 @@
 				url: $(deleteLink).prop('href'),
 				success: function(data) {
 					$(`#comment-${data.data.comment_id}`).remove();
+
+					new Noty({
+						theme: 'relax',
+						text: 'Comment Deleted',
+						type: 'success',
+						layout: 'topRight',
+						timeout: 1500
+					}).show();
+
 					console.log(data);
 				},
 				error: function(error) {
