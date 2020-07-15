@@ -29,6 +29,9 @@ app.use(express.urlencoded({ extended: true }));
 //cookie settings
 app.use(cookieParser());
 
+//setting up uploads
+app.use('/uploads', express.static(__dirname + '/uploads'));
+
 //static files
 app.use(express.static('./assets'));
 

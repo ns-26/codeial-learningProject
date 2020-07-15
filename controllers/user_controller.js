@@ -12,19 +12,6 @@ module.exports.profile = function(req, res) {
 };
 
 module.exports.update = async function(req, res) {
-	// if (req.user.id == req.params.id) {
-	// 	User.findByIdAndUpdate(req.params.id, req.body, function(err, user) {
-	// 		if (err) {
-	// 			req.flash('error', 'Error in Updating');
-	// 			console.log('error in updating the users values');
-	// 			return res.redirect('back');
-	// 		}
-	// 		req.flash('success', 'Updated!');
-	// 		return res.redirect('/');
-	// 	});
-	// } else {
-	// 	return res.status(401).send('Unauthorized');
-	// }
 	try {
 		if (req.user.id == req.params.id) {
 			let user = await User.findById(req.params.id);
@@ -38,7 +25,6 @@ module.exports.update = async function(req, res) {
 				user.email = req.body.email;
 				if (req.file) {
 					console.log(req.file);
-
 					//this is saving the path of the uploaded file into the avatar field of the user
 					user.avatar = User.avatarPath + '/' + req.file.filename;
 				}
