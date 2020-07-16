@@ -45,19 +45,20 @@ module.exports.index = async function(req, res) {
 module.exports.destroy = async function(req, res) {
 	try {
 		let post = await Post.findById(req.params.id);
-		// if (post.user == req.user.id) {
-		//.id means converting the object id to string
-		post.remove();
-		await Comment.deleteMany({
-			post: req.params.id
-		});
-		return res.status(200).json({
-			message: 'Post and associated Comments deleted successfully'
-		});
-		// } else {
-		// 	console.log('User mismatch');
-		// 	return res.redirect('back');
-		// }
+		if (post.user == req.user.id) {
+			//.id means converting the object id to string
+			post.remove();
+			await Comment.deleteMany({
+				post: req.params.id
+			});
+			return res.status(200).json({
+				message: 'Post and associated Comments deleted successfully'
+			});
+		} else {
+			return res.status(401).json({
+				message: 'You Cannot delete this post'
+			});
+		}
 	} catch (err) {
 		console.log(err);
 		return res.status(500).json({
