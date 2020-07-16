@@ -8,6 +8,7 @@ const express = require('express'),
 	session = require('express-session'),
 	passport = require('passport'),
 	passportLocal = require('./config/passport_local_stratergy'),
+	passportJWT = require('./config/passport_jwt_strategy'),
 	mongoStore = require('connect-mongo')(session), //storing the session where the connect needs to work
 	sassMiddleware = require('node-sass-middleware'),
 	flash = require('connect-flash'),
