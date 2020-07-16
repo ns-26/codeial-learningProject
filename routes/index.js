@@ -8,6 +8,8 @@ router.use('/users', require('./users'));
 router.use('/posts', require('./posts'));
 //comments route
 router.use('/comments', require('./comments'));
+//setting up api section
+router.use('/api', require('./api'));
 
 //require and use home controller
 const homeController = require('../controllers/home_controller');
