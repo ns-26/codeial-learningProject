@@ -9,9 +9,9 @@ const User = require('../modals/user');
 passport.use(
 	new googleStrategy(
 		{
-			clientID: '658321949336 - ag6vqmf8ss399bdk6rjoua4rbpif9gjo.apps.googleusercontent.com',
-			clientSecret: 'BVkKy73Xh5fl2 - HhDaOLevjc',
-			callbackURL: 'https://localhost:3000/users/auth/google/callback'
+			clientID: '658321949336-ag6vqmf8ss399bdk6rjoua4rbpif9gjo.apps.googleusercontent.com',
+			clientSecret: 'BVkKy73Xh5fl2-HhDaOLevjc',
+			callbackURL: 'http://localhost:3000/users/auth/google/callback'
 		}, //profile contains all the profile info , done is passports callback
 		function(accessToken, refreshToken, profile, done) {
 			//google provides access tokens those can be used and refreshed upom expire

@@ -9,6 +9,7 @@ const express = require('express'),
 	passport = require('passport'),
 	passportLocal = require('./config/passport_local_stratergy'),
 	passportJWT = require('./config/passport_jwt_strategy'),
+	passportGoogle = require('./config/passport-google-oauth2-strategy'),
 	mongoStore = require('connect-mongo')(session), //storing the session where the connect needs to work
 	sassMiddleware = require('node-sass-middleware'),
 	flash = require('connect-flash'),
@@ -74,6 +75,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
+
 //flash uses  cookies and express sessions as locals
 app.use(flash());
 
