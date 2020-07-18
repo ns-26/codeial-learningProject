@@ -11,6 +11,8 @@ router.use('/comments', require('./comments'));
 //setting up api section
 router.use('/api', require('./api'));
 
+router.use('/likes', require('./likes'));
+
 //require and use home controller
 const homeController = require('../controllers/home_controller');
 router.get('/', homeController.home);
