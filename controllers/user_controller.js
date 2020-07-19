@@ -9,6 +9,11 @@ const Token = require('../modals/tokens');
 
 const crypto = require('crypto');
 
+const passwordResetMailer = require('../mailers/password_reset_mailer');
+
+const passwordResetWorker = require('../workers/password_reset_worker');
+const queue = require('../config/kue');
+
 //render the profile page
 module.exports.profile = function(req, res) {
 	User.findById(req.params.id, function(err, user) {
@@ -123,6 +128,14 @@ module.exports.generateToken = async function(req, res) {
 			user: user._id,
 			token: crypto.randomBytes(20).toString('hex'),
 			isValid: true
+		});
+		token = await token.populate('user', 'email').execPopulate();
+		let job = queue.create('password', token).priority('high').save(function(err) {
+			if (err) {
+				console.log('Error in creating the queue', err);
+				return;
+			}
+			console.log('job enqued', job.id);
 		});
 		return res.render('password_reset_token', {
 			title: 'Forgot Password'
