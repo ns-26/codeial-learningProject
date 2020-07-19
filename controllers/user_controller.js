@@ -12,6 +12,7 @@ const crypto = require('crypto');
 const passwordResetMailer = require('../mailers/password_reset_mailer');
 
 const passwordResetWorker = require('../workers/password_reset_worker');
+
 const queue = require('../config/kue');
 
 //render the profile page
@@ -140,6 +141,52 @@ module.exports.generateToken = async function(req, res) {
 		return res.render('password_reset_token', {
 			title: 'Forgot Password'
 		});
+	} catch (err) {
+		console.log(err);
+		return res.status(500).json({
+			message: 'Internal Server Error'
+		});
+	}
+};
+
+module.exports.resetPassword = async function(req, res) {
+	try {
+		let accessToken = req.query.accesstoken;
+
+		let token = await Token.findOne({ token: accessToken });
+
+		if (token.isValid) {
+			return res.render('password_reset_new', {
+				title: 'Reset Password',
+				token: token
+			});
+		} else {
+			return res.status(401).json({
+				message: 'Unauthorised'
+			});
+		}
+	} catch (err) {
+		console.log(err);
+		return res.status(500).json({
+			message: 'Internal Server Error'
+		});
+	}
+};
+
+module.exports.newPassword = async function(req, res) {
+	try {
+		let accessToken = req.query.accesstoken;
+
+		let token = await Token.findOne({ token: accessToken });
+
+		if (token.isValid) {
+			let user = await User.findById(token.user);
+			return res.redirect('/');
+		} else {
+			return res.status(401).json({
+				message: 'Unauthorised'
+			});
+		}
 	} catch (err) {
 		console.log(err);
 		return res.status(500).json({

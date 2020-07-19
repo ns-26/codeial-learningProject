@@ -36,4 +36,6 @@ router.get('/forgot-password', usersController.forgotPassword);
 
 router.post('/generate-token', usersController.generateToken);
 
+router.get('/reset-password', usersController.resetPassword);
+
 module.exports = router;
