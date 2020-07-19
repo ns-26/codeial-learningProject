@@ -32,4 +32,8 @@ router.get(
 	usersController.createSession
 );
 
+router.get('/forgot-password', usersController.forgotPassword);
+
+router.post('/generate-token', usersController.generateToken);
+
 module.exports = router;

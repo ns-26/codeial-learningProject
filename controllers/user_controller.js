@@ -5,6 +5,10 @@ const path = require('path');
 
 const fs = require('fs');
 
+const Token = require('../modals/tokens');
+
+const crypto = require('crypto');
+
 //render the profile page
 module.exports.profile = function(req, res) {
 	User.findById(req.params.id, function(err, user) {
@@ -104,4 +108,29 @@ module.exports.destroySession = function(req, res) {
 	req.flash('success', 'You have logged out');
 	req.logout();
 	return res.redirect('/');
+};
+
+module.exports.forgotPassword = (req, res) => {
+	return res.render('password_reset_email', {
+		title: 'Forgot Password'
+	});
+};
+
+module.exports.generateToken = async function(req, res) {
+	try {
+		let user = await User.findOne({ email: req.body.email });
+		let token = await Token.create({
+			user: user._id,
+			token: crypto.randomBytes(20).toString('hex'),
+			isValid: true
+		});
+		return res.render('password_reset_token', {
+			title: 'Forgot Password'
+		});
+	} catch (err) {
+		console.log(err);
+		return res.status(500).json({
+			message: 'Internal Server Error'
+		});
+	}
 };
