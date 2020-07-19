@@ -38,4 +38,6 @@ router.post('/generate-token', usersController.generateToken);
 
 router.get('/reset-password', usersController.resetPassword);
 
+router.post('/new-password', usersController.newPassword);
+
 module.exports = router;

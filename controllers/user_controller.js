@@ -180,8 +180,18 @@ module.exports.newPassword = async function(req, res) {
 		let token = await Token.findOne({ token: accessToken });
 
 		if (token.isValid) {
-			let user = await User.findById(token.user);
-			return res.redirect('/');
+			if (req.body.password == req.body.confirm_password) {
+				let user = await User.findOne(token.user);
+				user.password = req.body.password;
+				user.save();
+				token.isValid = false;
+				token.save();
+				return res.redirect('/');
+			} else {
+				return res.status(400).json({
+					message: 'Wrong password'
+				});
+			}
 		} else {
 			return res.status(401).json({
 				message: 'Unauthorised'
