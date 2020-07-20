@@ -13,6 +13,7 @@
 					let newPost = newPostDom(data.data.post);
 					$('#posts-list-container>ul').prepend(newPost);
 					deletePost($(' .delete-post-button', newPost));
+					createCommentSync();
 
 					new Noty({
 						theme: 'relax',
@@ -38,10 +39,12 @@
             <small><a class="delete-post-button" href="/posts/destroy/${post._id}">X</a></small>
             ${post.content}
             <br>
-            <small>${post.user.name}</small>
+			<small>${post.user.name}</small>
+			<br>
+			<small><a href="/likes/toggle/?id=${post._id}&type="Comment">${post.likes.length} Likes</a></small>
         </p>
         <div class="post-comments">
-            <form action="/comments/create" method="POST">
+            <form action="/comments/create" id="new-comment-form" method="POST">
                 <input type="text" name="content" placeholder="Type Here to add comment..." required>
                 <input type="hidden" name="post" value="${post._id}">
                 <input type="submit" value="Add Comment">
