@@ -32,6 +32,7 @@ module.exports.toggleLike = async function(req, res) {
 
 			existingLike.remove();
 			deleted = true;
+			req.flash('success', req.query.type + ' Unliked');
 		} else {
 			let newLike = await Like.create({
 				user: req.user._id,
@@ -40,14 +41,11 @@ module.exports.toggleLike = async function(req, res) {
 			});
 			likeable.likes.push(newLike._id);
 			likeable.save();
+			req.flash('success', req.query.type + ' Liked');
 		}
-		return res.status(200).json({
-			message: 'reqeust successful',
-			data: {
-				deleted: deleted
-			}
-		});
+		return res.redirect('/');
 	} catch (err) {
+		req.flash('error', 'There is some error');
 		console.log(err);
 		return res.status(500).json({
 			message: 'Internal Server Error'
