@@ -1,0 +1,133 @@
+[0mGET / [32m200[0m 179.175 ms - 6886[0m
+[0mGET /users/sign-out [36m302[0m 93.355 ms - 46[0m
+[0mGET / [32m200[0m 248.704 ms - 6681[0m
+[0mGET /users/sign-out [36m302[0m 2662.586 ms - 46[0m
+[0mGET / [32m200[0m 86.095 ms - 4345[0m
+[0mGET / [32m200[0m 100.200 ms - 4143[0m
+[0mGET / [36m304[0m 91.450 ms - -[0m
+[0mGET /css/chat_box.css [33m404[0m 55.446 ms - 155[0m
+[0mGET /css/footer.css [33m404[0m 45.203 ms - 153[0m
+[0mGET /css/header.css [33m404[0m 45.922 ms - 153[0m
+[0mGET /css/layout.css [33m404[0m 79.721 ms - 153[0m
+[0mGET /css/home.css [33m404[0m 39.018 ms - 151[0m
+[0mGET /js/home_comments.js [33m404[0m 35.129 ms - 158[0m
+[0mGET /js/chat_engine.js [33m404[0m 29.021 ms - 156[0m
+[0mGET /js/home_posts.js [33m404[0m 43.148 ms - 155[0m
+[0mGET /js/chat_engine.js [33m404[0m 29.955 ms - 156[0m
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:41 +0000] "GET / HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:42 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:19:59 +0000] "GET / HTTP/1.1" 200 4143 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:00 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:20:01 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET / HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:09 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:10 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:10 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:10 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:10 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:14 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:14 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:14 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:14 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:14 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:39 +0000] "GET / HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:39 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:39 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:40 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:40 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:40 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:46 +0000] "GET / HTTP/1.1" 200 4143 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:47 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET / HTTP/1.1" 200 4143 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:21:51 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+[0mGET / [36m304[0m 129.906 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 11.443 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 34.669 ms - 46[0m
+[0mGET / [32m200[0m 38.061 ms - 6886[0m
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:17 +0000] "GET / HTTP/1.1" 200 6681 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:17 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:18 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:18 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:23 +0000] "GET / HTTP/1.1" 200 6681 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:23 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:23 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:23 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /js/home_comments.js HTTP/1.1" 404 158 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:25:24 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+[0mGET / [32m200[0m 90.299 ms - 6681[0m
+[0mGET /favicon.ico [33m404[0m 20.232 ms - 150[0m
+[0mGET / [32m200[0m 29.436 ms - 6681[0m
+[0mGET /favicon.ico [33m404[0m 10.767 ms - 150[0m
+[0mGET / [32m200[0m 101.635 ms - 6681[0m
+[0mGET /favicon.ico [33m404[0m 17.008 ms - 150[0m
+[0mGET / [32m200[0m 137.705 ms - 6681[0m
+[0mGET /favicon.ico [33m404[0m 27.399 ms - 150[0m
+::ffff:127.0.0.1 - - [05/Sep/2020:20:27:47 +0000] "GET / HTTP/1.1" 200 6681 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:27:48 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:28:21 +0000] "POST /posts/create HTTP/1.1" 200 272 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Sep/2020:20:28:38 +0000] "GET / HTTP/1.1" 200 7642 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"

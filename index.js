@@ -2,6 +2,7 @@ const express = require("express"),
   app = express(),
   port = 8000,
   env = require("./config/environment"),
+  logger = require("morgan"),
   path = require("path"),
   db = require("./config/mongoose"),
   expressLayouts = require("express-ejs-layouts"),
@@ -22,6 +23,7 @@ const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
 chatServer.listen(5000);
 console.log("chat server is listening on port 5000");
 
+// if (env.name === "development") {
 app.use(
   sassMiddleware({
     src: path.join(__dirname, env.asset_path, "/scss"),
@@ -31,6 +33,7 @@ app.use(
     prefix: "/css",
   })
 );
+// }
 
 //form controller
 app.use(express.urlencoded({ extended: true }));
@@ -43,6 +46,8 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 
 //static files
 app.use(express.static(env.asset_path));
+
+app.use(logger(env.morgan.mode, env.morgan.options));
 
 //express layout
 app.use(expressLayouts);
