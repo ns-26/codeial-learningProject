@@ -1,0 +1,1 @@
+body #layout-main{margin-top:60px}body .navbar{display:flex;justify-content:space-between;background-color:#1b54bd;color:#fff;padding:10px;overflow:hidden;position:fixed;top:0;width:100%}body .navbar h1,body .navbar ul{margin:0}body .navbar li{display:inline}body .navbar li a{text-decoration:none;color:#fff;padding:8px;position:relative;top:7px;font-size:1.2rem}

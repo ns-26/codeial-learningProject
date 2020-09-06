@@ -23,17 +23,17 @@ const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
 chatServer.listen(5000);
 console.log("chat server is listening on port 5000");
 
-// if (env.name === "development") {
-app.use(
-  sassMiddleware({
-    src: path.join(__dirname, env.asset_path, "/scss"),
-    dest: path.join(__dirname, env.asset_path, "/css"),
-    debug: true,
-    outputStyle: "extended",
-    prefix: "/css",
-  })
-);
-// }
+if (env.name === "production") {
+  app.use(
+    sassMiddleware({
+      src: path.join(__dirname, env.asset_path, "/scss"),
+      dest: path.join(__dirname, env.asset_path, "/css"),
+      debug: true,
+      outputStyle: "extended",
+      prefix: "/css",
+    })
+  );
+}
 
 //form controller
 app.use(express.urlencoded({ extended: true }));
