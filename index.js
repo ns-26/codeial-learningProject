@@ -16,6 +16,7 @@ const express = require("express"),
   sassMiddleware = require("node-sass-middleware"),
   flash = require("connect-flash"),
   customMware = require("./config/middleware");
+require("./config/view_helpers")(app);
 
 // socket config (chat server)
 const chatServer = require("http").Server(app);
@@ -23,7 +24,7 @@ const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
 chatServer.listen(5000);
 console.log("chat server is listening on port 5000");
 
-if (env.name === "production") {
+if (env.name == "development") {
   app.use(
     sassMiddleware({
       src: path.join(__dirname, env.asset_path, "/scss"),

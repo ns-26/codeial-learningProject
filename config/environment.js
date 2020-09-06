@@ -39,8 +39,8 @@ const development = {
 };
 
 const production = {
-  name: "development",
-  asset_path: "./assets",
+  name: "production",
+  asset_path: "./public/assets",
   session_cookie_key: "blahsomething",
   db: "codeial_development",
   smtp: {
